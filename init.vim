@@ -51,6 +51,7 @@ autocmd FileType v command! Run w | split | term v run %
 " Additional key mappings
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :FZF<CR>
+nnoremap <C-s> :w<CR>
 
 " Rust Language Server configuration
 let g:coc_global_extensions = ['coc-rust-analyzer']
