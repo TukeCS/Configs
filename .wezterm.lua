@@ -7,14 +7,13 @@ local config = wezterm.config_builder()
 
 -- Window settings
 config.front_end = "OpenGL"
-config.max_fps = 240 -- Set to 240 for 240Hz monitor
+config.max_fps = 240
 config.default_cursor_style = "BlinkingBlock"
-config.cursor_blink_rate = 500
-config.term = "xterm-256color" -- Set the terminal type
+config.term = "xterm-256color"
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 14.0 -- Adjusted to your preference
+config.font_size = 14.0
 config.cell_width = 0.9
-config.window_background_opacity = 0.85 -- Set for background transparency
+config.window_background_opacity = 0.85
 config.window_padding = {
     left = 0,
     right = 0,
@@ -39,35 +38,34 @@ config.keys = {
     { key = "w", mods = "CTRL", action = act.CloseCurrentTab { confirm = true } },
 }
 
--- Colors
-config.color_scheme = "Cloud (terminal.sexy)"
+-- Colors (Modified as per your request)
 config.colors = {
-    background = "#282828", -- Gruvbox dark background
-    foreground = "#ebdbb2", -- Gruvbox light foreground
-    cursor_bg = "#d79921", -- Gruvbox yellow
-    cursor_border = "#d79921",
-    cursor_fg = "#282828",
-    selection_bg = "#3c3836",
-    selection_fg = "#ebdbb2",
+    background = "#111119", -- Very dark background
+    foreground = "#e26cb1", -- Path color
+    cursor_bg = "#F18FB0", -- Cursor background
+    cursor_border = "#F18FB0", -- Cursor border
+    cursor_fg = "#09090d", -- Cursor foreground
+    selection_bg = "#F18FB0", -- Selection background
+    selection_fg = "#09090d", -- Selection foreground
     ansi = {
-        "#1d2021", -- black
-        "#fb4934", -- red
-        "#b8bb26", -- green
-        "#fabd2f", -- yellow
-        "#83a598", -- blue
-        "#d3869b", -- magenta
-        "#8ec07c", -- cyan
-        "#ffffff", -- white
+        "#140a1d", -- black
+        "#B52A5B", -- red
+        "#FF4971", -- green
+        "#8897F4", -- yellow
+        "#bd93f9", -- blue
+        "#E9729D", -- magenta
+        "#F18FB0", -- cyan
+        "#f1c4e0", -- white
     },
     brights = {
-        "#665c54", -- bright black
-        "#fb4934", -- bright red
-        "#b8bb26", -- bright green
-        "#fabd2f", -- bright yellow
-        "#83a598", -- bright blue
-        "#d3869b", -- bright magenta
-        "#8ec07c", -- bright cyan
-        "#ffffff", -- bright white
+        "#a048ed", -- bright black (input color)
+        "#B52A5B", -- bright red
+        "#FF4971", -- bright green
+        "#8897F4", -- bright yellow
+        "#bd93f9", -- bright blue
+        "#E9729D", -- bright magenta
+        "#F18FB0", -- bright cyan
+        "#f1c4e0", -- bright white
     },
 }
 
@@ -78,8 +76,7 @@ config.window_frame = {
 }
 
 config.default_prog = { "powershell.exe", "-NoLogo" }
-config.initial_cols = 110
-config.initial_rows = 25
+config.initial_cols = 120
+config.initial_rows = 30
 
--- and finally, return the configuration to wezterm
 return config
