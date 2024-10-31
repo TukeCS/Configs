@@ -25,7 +25,7 @@ Plug 'junegunn/fzf.vim'               " FZF integration
 
 " Theme
 Plug 'Shadorain/shadotheme'
-" Initialize vim-plug
+
 call plug#end()
 
 " General settings
