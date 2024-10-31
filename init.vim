@@ -13,6 +13,7 @@ Plug 'ollykel/v-vim'                  " V support
 " Python support
 Plug 'Vimjas/vim-python-pep8-indent'   " Python indentation
 Plug 'psf/black', { 'branch': 'main' } " Python code formatter
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  " LSP support
 
 " Miscellaneous
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Syntax highlighting
@@ -50,3 +51,13 @@ autocmd FileType v command! Run w | split | term v run %
 " Additional key mappings
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :FZF<CR>
+
+" Rust Language Server configuration
+let g:coc_global_extensions = ['coc-rust-analyzer']
+
+" Python Language Server configuration
+let g:coc_global_extensions += ['coc-pyright']
+
+" Additional settings
+set autoindent                   " Enable auto-indentation
+set smartindent                  " Enable smart indentation
