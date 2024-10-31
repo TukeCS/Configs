@@ -23,14 +23,15 @@ Plug 'preservim/nerdtree'            " File explorer
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install' } " Fuzzy finder
 Plug 'junegunn/fzf.vim'               " FZF integration
 
+" Theme
+Plug 'Shadorain/shadotheme'
+" Initialize vim-plug
 call plug#end()
 
 " General settings
-set background=dark
-colorscheme gruvbox
+colorscheme shado
 syntax on
 set number
-set relativenumber              " Relative line numbers
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4              " Make tabbing feel like spaces
