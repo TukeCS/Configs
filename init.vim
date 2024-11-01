@@ -17,13 +17,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}  " LSP support
 
 " Miscellaneous
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Syntax highlighting
-Plug 'morhetz/gruvbox'                " Color scheme
 Plug 'airblade/vim-gitgutter'        " Git diff in gutter
 Plug 'preservim/nerdtree'            " File explorer
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install' } " Fuzzy finder
 Plug 'junegunn/fzf.vim'               " FZF integration
-
-" Theme
+Plug 'justinmk/vim-sneak'             " Easy motion
 Plug 'Shadorain/shadotheme'
 
 call plug#end()
@@ -39,6 +37,8 @@ set expandtab
 set clipboard=unnamedplus       " Use system clipboard
 set mouse=a
 set hidden                      " Allow switching buffers without saving
+
+let g:sneak#label = 1            " Use single character labels
 
 " Enable file type detection and plugin
 filetype plugin indent on
