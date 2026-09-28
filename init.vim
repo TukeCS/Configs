@@ -54,11 +54,8 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-p> :FZF<CR>
 nnoremap <C-s> :w<CR>
 
-" Rust Language Server configuration
-let g:coc_global_extensions = ['coc-rust-analyzer']
-
-" Python Language Server configuration
-let g:coc_global_extensions += ['coc-pyright']
+" Rust and Python 
+let g:coc_global_extensions = ['coc-rust-analyzer', 'coc-pyright']
 
 " Additional settings
 set autoindent                   " Enable auto-indentation
